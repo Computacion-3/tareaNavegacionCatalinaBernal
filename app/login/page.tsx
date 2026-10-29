@@ -17,8 +17,8 @@ export default function Login(){
                 <div className="card-actions justify-end">
                 <button className="btn btn-primary w-full mt-2">Iniciar Sesión</button>
                 </div>
-                <p className="text-center text-sm mt-2">"No tienes cuenta? "
-                    <a className="link link-primary"></a>
+                <p className="text-center text-sm mt-2">"¿No tienes cuenta? "
+                    <a className="link link-primary" data-go="register">Regístrate</a>
                 </p>
             </form>
             </div>

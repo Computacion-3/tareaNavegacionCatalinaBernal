@@ -8,25 +8,14 @@ export default function RoutinesCleanPage() {
     const { routines, isLoading, errorMessage, createRoutine } = useRoutines();
 
     return (
-        <main className="p-6 max-w-4xl mx-auto space-y-6">
-            <header className="border-b border-base-200 pb-4">
+        <section data-screen="app" className="bg-base-200">
+            <header className="navbar bg-base-100 shadow-sm px-4">
+                <div className="dropdown hidden" data-only=></div>
                 <h1 className="text-3xl font-bold">Gestión de Rutinas</h1>
                 <p className="text-sm opacity-70 mt-1">
                     Crea y administra tus rutinas de entrenamiento.
                 </p>
             </header>
-
-            {/* Formulario */}
-            <section>
-                <RoutineForm onSubmit={createRoutine} isLoading={isLoading} />
-            </section>
-
-            {/* Error */}
-            {errorMessage && (
-                <div role="alert" className="alert alert-error text-sm">
-                    <span>{errorMessage}</span>
-                </div>
-            )}
 
             {/* Listado */}
             <section className="space-y-4">
@@ -54,6 +43,6 @@ export default function RoutinesCleanPage() {
                     </div>
                 )}
             </section>
-        </main>
+        </section>
     );
 }
