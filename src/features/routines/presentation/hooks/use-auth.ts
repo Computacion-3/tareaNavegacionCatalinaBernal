@@ -9,5 +9,7 @@ export function useAuth() {
     const isLoading = useAppSelector((state) => state.routines.isLoading);
     const isMutating = useAppSelector((state) => state.routines.isMutating);
     const errorMessage = useAppSelector((state) => state.routines.errorMessage);
+
+
     return();
 }
