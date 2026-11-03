@@ -18,7 +18,8 @@ export default function LoginPage() {
 
     const handleLogin = async (params: LoginParams): Promise<boolean> => {
         const ok = await login(params);
-        if (ok) router.push('/routines');
+        // Redirección por evento: replace para que "atrás" no regrese al login
+        if (ok) router.replace('/routines');
         return ok;
     };
 

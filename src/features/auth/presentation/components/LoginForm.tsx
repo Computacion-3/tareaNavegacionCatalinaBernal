@@ -65,7 +65,7 @@ export function LoginForm({ onSubmit, isLoading, errorMessage }: LoginFormProps)
                 <div className="card-actions justify-end">
                     <button type="submit" disabled={isLoading} className="btn btn-primary w-full mt-2">
                         {isLoading ? <span className="loading loading-spinner loading-sm"></span> : null}
-                        Iniciar Sesión
+                        Iniciar sesión
                     </button>
                 </div>
 
